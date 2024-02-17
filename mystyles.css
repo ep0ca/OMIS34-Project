@@ -1,0 +1,75 @@
+body {
+	background-image: url("file:///Users/maryle/Desktop/OMIS34finalWebsiteMaryLe/whitequiltedbackground.jpeg");
+	font-family:sans-serif;
+}
+
+
+
+* {
+	margin: 10;
+	padding: 10;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	background-color: #FDF3FF;
+}
+
+nav>ul {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: floralwhite;
+}
+
+nav>ul>li {
+	display: inline-block;
+	position: relative;
+	background-color: #FDF3FF;
+	border-radius: 5px;
+	padding: 0 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	color: #6f5d4b;
+}
+
+nav ul li a:hover {
+	color: hotpink;
+}
+
+nav>ul>li:hover>ul {
+	display: block;
+}
+
+nav>ul>li>ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	width: 100%;
+}
+
+.row {
+	margin: 8px -16px;
+}
+
+.row, .row>.column {
+	padding: 8px;
+}
+
+.column {
+	float: left;
+	width: 20%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
